@@ -3,7 +3,7 @@ use bitvec::prelude::*;
 
 
 
-fn contar_primos(n: usize) -> usize {
+pub fn contar_primos(n: usize) -> usize {
     if n < 2 {
         return 0;
     }    
