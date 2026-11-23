@@ -3,9 +3,9 @@ use std::{
     hint::black_box,
     io::{self, BufWriter, Write},
     thread,
-    time::{Duration, Instant},
-};
-
+    cmp::min,
+    time::{Duration, SystemTime, UNIX_EPOCH}
+}
 mod par;
 mod seq;
 
